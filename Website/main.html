@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>ONSHOP.COM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="bg-image"></div>
+<div class="bg-text">
+<div class="header">
+  <img src ="pic1.png" width="1250" height="500" style="align:center">
+</div>
+<div class="navbar">
+  <a href="main.html" class="active">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Signup</a>
+  <a href="terms.html">Terms & Conditions</a>
+  <a href="help.html" class="right">Help</a>
+  <a href="contact.html" class="right">Contact Us</a>
+</div>
+<div class="row">
+  <div class="side">
+	<h1>CATEGORIES</h1>
+ 	 <a href="watches.html"><div class ="buttons" style="height:60px;">Watches</div></a><br>
+ 	<a href="laptops.html"><div class ="buttons" style="height:60px;">Laptops</div></a><br>
+ 	<a href="mobiles.html"><div class ="buttons" style="height:60px;">Mobiles</div></a><br>
+ 	<a href="cameras.html"><div class ="buttons" style="height:60px;">Cameras</div></a><br>
+ 	</div>
+  <div class="main">
+	<h2>Explore from various categories</h2>
+ 	<div class="slideshow-container">
+  		<div class="mySlides fade">
+    			<div class="numbertext">1 / 6</div>
+    			<img src="watches.jpg" width="900" height="700">
+    			<div class="text">Watches</div>
+  		</div>
+		<div class="mySlides fade">
+    			<div class="numbertext">2 / 6</div>
+    			<img src="cameras.jpg" width="900" height="700">
+    			<div class="text">Cameras</div>
+  		</div>
+		<div class="mySlides fade">
+    			<div class="numbertext">3 / 6</div>
+    			<img src="mobiles.jpg" width="900" height="700">
+    			<div class="text">Mobiles</div>
+  		</div>
+		<div class="mySlides fade">
+    			<div class="numbertext">4 / 6</div>
+    			<img src="laptops.jpg" width="900" height="700">
+    			<div class="text">Laptops</div>
+  		</div>
+		<div class="mySlides fade">
+    			<div class="numbertext">5 / 6</div>
+    			<img src="electronics.jpg" width="900" height="700">
+    			<div class="text">Electronics</div>
+  		</div>
+ 		<div class="mySlides fade">
+    			<div class="numbertext">6 / 6</div>
+    			<img src="music.jpg" width="900" height="700">
+    			<div class="text">Musical instruments</div>
+  		</div>
+	</div>
+</div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
