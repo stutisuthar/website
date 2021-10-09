@@ -1,5 +1,5 @@
 # website
 
 This is a demo website. 
-Dynamic 
+Dynamic project
 HTML, CSS, and JavaScript
